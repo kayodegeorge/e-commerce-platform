@@ -233,39 +233,6 @@ function ProductDetails() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <div className='relative ml-auto flex-1 md:grow-0'>
-            <Search className='absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground' />
-            <Input
-              type='search'
-              placeholder='Search...'
-              className='w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[336px]'
-            />
-          </div>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant='outline'
-                size='icon'
-                className='overflow-hidden rounded-full'
-              >
-                <Image
-                  src='/placeholder-user.jpg'
-                  width={36}
-                  height={36}
-                  alt='Avatar'
-                  className='overflow-hidden rounded-full'
-                />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align='end'>
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Settings</DropdownMenuItem>
-              <DropdownMenuItem>Support</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
         </header>
         <main className='grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8'>
           <div className='mx-auto grid max-w-[59rem] flex-1 auto-rows-max gap-4'>
@@ -318,7 +285,7 @@ function ProductDetails() {
                     </div>
                   </CardContent>
                 </Card>
-                <Card x-chunk='dashboard-07-chunk-1'>
+                <Card>
                   <CardHeader>
                     <CardTitle>Stock</CardTitle>
                     <CardDescription>
@@ -454,7 +421,7 @@ function ProductDetails() {
                     </Button>
                   </CardFooter>
                 </Card>
-                <Card x-chunk='dashboard-07-chunk-2'>
+                <Card>
                   <CardHeader>
                     <CardTitle>Product Category</CardTitle>
                   </CardHeader>
@@ -505,7 +472,7 @@ function ProductDetails() {
                 </Card>
               </div>
               <div className='grid auto-rows-max items-start gap-4 lg:gap-8'>
-                <Card x-chunk='dashboard-07-chunk-3'>
+                <Card>
                   <CardHeader>
                     <CardTitle>Product Status</CardTitle>
                   </CardHeader>
@@ -525,66 +492,6 @@ function ProductDetails() {
                         </Select>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-                <Card
-                  className='overflow-hidden'
-                  x-chunk='dashboard-07-chunk-4'
-                >
-                  <CardHeader>
-                    <CardTitle>Product Images</CardTitle>
-                    <CardDescription>
-                      Lipsum dolor sit amet, consectetur adipiscing elit
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className='grid gap-2'>
-                      <Image
-                        alt='Product image'
-                        className='aspect-square w-full rounded-md object-cover'
-                        height='300'
-                        src='/placeholder.svg'
-                        width='300'
-                      />
-                      <div className='grid grid-cols-3 gap-2'>
-                        <button>
-                          <Image
-                            alt='Product image'
-                            className='aspect-square w-full rounded-md object-cover'
-                            height='84'
-                            src='/placeholder.svg'
-                            width='84'
-                          />
-                        </button>
-                        <button>
-                          <Image
-                            alt='Product image'
-                            className='aspect-square w-full rounded-md object-cover'
-                            height='84'
-                            src='/placeholder.svg'
-                            width='84'
-                          />
-                        </button>
-                        <button className='flex aspect-square w-full items-center justify-center rounded-md border border-dashed'>
-                          <Upload className='h-4 w-4 text-muted-foreground' />
-                          <span className='sr-only'>Upload</span>
-                        </button>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-                <Card x-chunk='dashboard-07-chunk-5'>
-                  <CardHeader>
-                    <CardTitle>Archive Product</CardTitle>
-                    <CardDescription>
-                      Lipsum dolor sit amet, consectetur adipiscing elit.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div></div>
-                    <Button size='sm' variant='secondary'>
-                      Archive Product
-                    </Button>
                   </CardContent>
                 </Card>
               </div>

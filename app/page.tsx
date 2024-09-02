@@ -60,48 +60,39 @@ import { useState } from 'react'
 
 const dummyData = [
   {
- 
-    title: 'Open-Source SSD Pixel',
-    description:
-      "You can't compress the program without quantifying the open-source SSD pixel!",
+    title: 'Playstation 5',
+    description: 'Open box playstation 5 with 10 games',
     category: 'Electronics',
     price: '299.99',
     status: 'in stock',
-   
   },
   {
-   
-    title: 'EXE Feed Calculator',
-    description:
-      'Try to calculate the EXE feed, maybe it will index the multi-byte pixel!',
+    title: 'Iphone 16 pro max',
+    description: 'Latest iphone in town',
     category: 'Software',
     price: '149.99',
     status: 'out of stock',
-   
   },
   {
-   
-    title: 'Neural TCP Card',
-    description: 'We need to bypass the neural TCP card!',
+    title: 'Macbook pro 2024',
+    description: 'M3 Pro Edition',
     category: 'Hardware',
     price: '399.99',
     status: 'out of stock',
-   
   },
   {
-   
     title: 'SAS Interface',
     description:
       'The SAS interface is down, bypass the open-source pixel so we can back up the PNG bandwidth!',
     category: 'Networking',
     price: '249.99',
     status: 'in stock',
-  
   },
 ]
 
 export const description =
-  'An products dashboard with a sidebar navigation. The sidebar has icon navigation. The content area has a breadcrumb and search in the header. It displays a list of products in a table with actions.'
+  'A products listing platform with a sidebar navigation. The sidebar has icon navigation. The content area has a breadcrumb and search in the header. It displays a list of products in a table with actions.'
+
 // export const metadata: Metadata = {
 //   title: 'products',
 //   description: 'A product and issue tracker build using Tanstack Table.',
@@ -132,43 +123,10 @@ function Dashboard() {
 
           <Link
             href='#'
-            className='flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-          >
-            <ShoppingCart className='h-5 w-5' />
-            <span className='sr-only'>Orders</span>
-          </Link>
-
-          <Link
-            href='#'
             className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
           >
             <Package className='h-5 w-5' />
             <span className='sr-only'>Products</span>
-          </Link>
-
-          <Link
-            href='#'
-            className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-          >
-            <Users2 className='h-5 w-5' />
-            <span className='sr-only'>Customers</span>
-          </Link>
-
-          <Link
-            href='#'
-            className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-          >
-            <LineChart className='h-5 w-5' />
-            <span className='sr-only'>Analytics</span>
-          </Link>
-        </nav>
-        <nav className='mt-auto flex flex-col items-center gap-4 px-2 sm:py-5'>
-          <Link
-            href='#'
-            className='flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8'
-          >
-            <Settings className='h-5 w-5' />
-            <span className='sr-only'>Settings</span>
           </Link>
         </nav>
       </aside>
@@ -197,33 +155,13 @@ function Dashboard() {
                   <Home className='h-5 w-5' />
                   Dashboard
                 </Link>
-                <Link
-                  href='#'
-                  className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'
-                >
-                  <ShoppingCart className='h-5 w-5' />
-                  Orders
-                </Link>
+
                 <Link
                   href='#'
                   className='flex items-center gap-4 px-2.5 text-foreground'
                 >
                   <Package className='h-5 w-5' />
                   Products
-                </Link>
-                <Link
-                  href='#'
-                  className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'
-                >
-                  <Users2 className='h-5 w-5' />
-                  Customers
-                </Link>
-                <Link
-                  href='#'
-                  className='flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground'
-                >
-                  <LineChart className='h-5 w-5' />
-                  Settings
                 </Link>
               </nav>
             </SheetContent>
@@ -284,8 +222,7 @@ function Dashboard() {
                   <DialogHeader>
                     <DialogTitle>Add a Product</DialogTitle>
                     <DialogDescription>
-                      Make changes to your profile here. Click save when you're
-                      done.
+                      Add a product so it can be listed
                     </DialogDescription>
                   </DialogHeader>
 
@@ -304,17 +241,12 @@ function Dashboard() {
             <CardHeader>
               <CardTitle>Products</CardTitle>
               <CardDescription>
-                Manage your products and view their sales performance.
+                Manage your products and view their status.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <DataTable data={products} columns={columns} />
             </CardContent>
-            <CardFooter>
-              <div className='text-xs text-muted-foreground'>
-                Showing <strong>1-10</strong> of <strong>32</strong> products
-              </div>
-            </CardFooter>
           </Card>
         </main>
       </div>

@@ -10,7 +10,6 @@ export const productSchema = z.object({
   category: z.string(),
   price: z.string(),
   status: z.string(),
-
 })
 
 export type Product = z.infer<typeof productSchema>
@@ -55,8 +54,6 @@ export const columns: ColumnDef<Product>[] = [
       <DataTableColumnHeader column={column} title='Desc' />
     ),
     cell: ({ row }) => {
-      // const label = labels.find((label) => label.value === row.original.label)
-
       return (
         <div className='flex space-x-2'>
           <span className='max-w-[250px] truncate font-medium'>
