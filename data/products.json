@@ -1,0 +1,47 @@
+[
+  {
+    "id": "product-1",
+    "title": "Open-Source SSD Pixel",
+    "description": "You can't compress the program without quantifying the open-source SSD pixel!",
+    "category": "Electronics",
+    "price": 299.99,
+    "rating": 4.5,
+    "imageUrl": "https://example.com/product-8782.jpg",
+    "status": "in stock",
+    "createdAt": "2023-08-01T10:00:00Z"
+  },
+  {
+    "id": "product-2",
+    "title": "EXE Feed Calculator",
+    "description": "Try to calculate the EXE feed, maybe it will index the multi-byte pixel!",
+    "category": "Software",
+    "price": 149.99,
+  
+    "rating": 4.0,
+    "imageUrl": "https://example.com/product-7878.jpg",
+    "status": "out of stock",
+    "createdAt": "2023-07-25T12:00:00Z"
+  },
+  {
+    "id": "product-3",
+    "title": "Neural TCP Card",
+    "description": "We need to bypass the neural TCP card!",
+    "category": "Hardware",
+    "price": 399.99,
+    "rating": 4.8,
+    "imageUrl": "https://example.com/product-7839.jpg",
+    "status": "out of stock",
+    "createdAt": "2023-08-05T09:00:00Z"
+  },
+  {
+    "id": "product-4",
+    "title": "SAS Interface",
+    "description": "The SAS interface is down, bypass the open-source pixel so we can back up the PNG bandwidth!",
+    "category": "Networking",
+    "price": 249.99,
+    "rating": 3.9,
+    "imageUrl": "https://example.com/product-5562.jpg",
+    "status": "in stock",
+    "createdAt": "2023-07-30T11:00:00Z"
+  }
+]
